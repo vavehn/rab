@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour {
         float mh = Input.GetAxis("Horizontal");
         float mv = Input.GetAxis("Vertical");
 
-        Vector3 mov = new Vector3(mh, 0, mv);
+        Vector3 mov = new Vector3(mh, 0, mv); //rotation a deux balles
 
         rb.AddForce(mov * speed);
     }
