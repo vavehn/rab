@@ -10,11 +10,11 @@ public class CameraController : MonoBehaviour {
     private Vector3 offset;
 	
 	void Start () {
-        offset = transform.position - playerdemerde.transform.position;        
+        	offset = transform.position - playerdemerde.transform.position;        
 	}
 	
 	
 	void LateUpdate () {
-        transform.position = playerdemerde.transform.position + offset;
+        	transform.position = playerdemerde.transform.position + offset * 1.1;
 	}
 }
